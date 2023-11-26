@@ -15,5 +15,5 @@ app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
 })
 
-mongoose.connect('');
+mongoose.connect('mongodb+srv://vrukshali:zIPH7VMFMUaHckFK@cluster0.nr7kwtr.mongodb.net/todo');
 

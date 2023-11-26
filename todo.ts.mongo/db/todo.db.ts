@@ -1,4 +1,4 @@
-import { ObjectId, StreamDescription } from "mongodb";
+import { UUID } from "mongodb";
 import mongoose, {Schema} from "mongoose";
 
 const userSchema = new Schema ({
@@ -13,8 +13,8 @@ const userSchema = new Schema ({
 })
 
 const todoSchema = new Schema({
-    id: {
-        type: mongoose.Schema.Types.ObjectId, ref: 'User'
+    userId: {
+        type: UUID
     },
     title: {
         type: String,
